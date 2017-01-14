@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="view-port" content="width=device-width, initial-scale=1">
+		<title>Module 2</title>
+		<style>
+		* {
+			box-sizing: border-box;
+		}
+		.row{
+			width: 100%;
+		}
+		h1 {
+			
+			text-align: center;
+			margin: auto;
+			font-family: Helvetica, Verdana, sans-serif,serif;
+			font-size:35px;
+
+		}
+		.sub1, .sub2, .sub3{
+			position: absolute;
+			top: 0px;
+			right:0px;
+			padding:5px 30px 5px 15px;
+			border-left: 1px solid black;
+			border-bottom: 1px solid black;
+			font-size:25px;
+			background-color:pink;
+			color:black;
+
+		}
+		.sub2{
+			background-color:yellow;
+		}
+		.sub3 {
+			background-color: magenta;
+		}
+		p {
+			margin:20px 0px 0px 10px;
+			font-size:20px;
+
+		}
+
+		.div1, .div2, .div3{
+				float:left;
+				width: 31.33%;
+				border: 1px solid black;
+				padding: 20px;
+				
+				margin: 10% 1%;
+				position: relative;
+				background-color: #006688;
+				color:white;
+			}
+
+
+		@media (min-width: 768px) and (max-width: 991px) {
+				.div1, .div2 {
+					margin-bottom: 2%;
+					width: 48%;
+				}
+
+				.div3{
+					margin: 1% 1%;
+					width:98%;
+				}
+		}
+		@media(max-width: 767px){
+				.div1 {
+					width: 98%;
+					margin: 10% 1% 1% 1%;					
+				}
+				
+				.div2, .div3{
+					margin: 1%;
+					width:98%;
+				}	
+		}
+		</style>
+	</head>
+	<body>
+		<div class="row">
+			<h1> Our Menu</h1>
+			<div class="div1">
+				<div class="sub1">Veg Pasta</div>
+				<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+				</p>
+			</div>
+			<div class="div2">
+				<div class="sub2">Veg Salad</div>
+				<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+				</p>
+			</div>
+			<div class="div3">
+				<div class="sub3">Veg Soup</div>
+				<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
